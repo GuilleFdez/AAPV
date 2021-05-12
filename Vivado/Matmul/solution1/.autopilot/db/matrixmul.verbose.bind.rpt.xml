@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'matrixmul'" level="0">
+<item name = "Date">Tue May 11 17:11:53 2021
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">Matmul</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.923 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">5137, 5137, 51.370 us, 51.370 us, 5138, 5138, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_12_1_VITIS_LOOP_13_2">1024, 1024, 2, 1, 1, 1024, yes</column>
+<column name="- VITIS_LOOP_17_3_VITIS_LOOP_18_4">1024, 1024, 2, 1, 1, 1024, yes</column>
+<column name="- row_col">2055, 2055, 10, 2, 1, 1024, yes</column>
+<column name="- VITIS_LOOP_40_5_VITIS_LOOP_41_6">1026, 1026, 4, 1, 1, 1024, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

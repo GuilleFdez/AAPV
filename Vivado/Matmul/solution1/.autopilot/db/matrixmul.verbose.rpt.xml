@@ -1,0 +1,538 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'matrixmul'" level="0">
+<item name = "Date">Tue May 11 17:11:55 2021
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">Matmul</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.923 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">5137, 5137, 51.370 us, 51.370 us, 5138, 5138, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_12_1_VITIS_LOOP_13_2">1024, 1024, 2, 1, 1, 1024, yes</column>
+<column name="- VITIS_LOOP_17_3_VITIS_LOOP_18_4">1024, 1024, 2, 1, 1, 1024, yes</column>
+<column name="- row_col">2055, 2055, 10, 2, 1, 1024, yes</column>
+<column name="- VITIS_LOOP_40_5_VITIS_LOOP_41_6">1026, 1026, 4, 1, 1, 1024, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 2235, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 0, 5280, 1600, -</column>
+<column name="Memory">62, -, 0, 0, -</column>
+<column name="Multiplexer">-, -, -, 777, -</column>
+<column name="Register">-, -, 4101, 96, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">22, 0, 8, 8, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_32s_32s_32_2_1_U1">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U2">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U3">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U4">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U5">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U6">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U7">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U8">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U9">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U10">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U11">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U12">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U13">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U14">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U15">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U16">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U17">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U18">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U19">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U20">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U21">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U22">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U23">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U24">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U25">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U26">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U27">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U28">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U29">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U30">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U31">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U32">mul_32s_32s_32_2_1, 0, 0, 165, 50, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="tempA_U">tempA, 30, 0, 0, 0, 1024, 32, 1, 32768</column>
+<column name="tempB_U">tempA, 30, 0, 0, 0, 1024, 32, 1, 32768</column>
+<column name="tempAB_U">tempAB, 2, 0, 0, 0, 1024, 32, 1, 32768</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln12_1_fu_970_p2">+, 0, 0, 12, 11, 1</column>
+<column name="add_ln12_fu_982_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln13_fu_1032_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln14_fu_1026_p2">+, 0, 0, 13, 10, 10</column>
+<column name="add_ln17_1_fu_1042_p2">+, 0, 0, 12, 11, 1</column>
+<column name="add_ln17_fu_1054_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln18_fu_1104_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln19_fu_1098_p2">+, 0, 0, 13, 10, 10</column>
+<column name="add_ln24_1_fu_1114_p2">+, 0, 0, 12, 11, 1</column>
+<column name="add_ln24_fu_1138_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln26_fu_2832_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln33_10_fu_2983_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_11_fu_2987_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln33_12_fu_2991_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_13_fu_3075_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_14_fu_3098_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_15_fu_2997_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_16_fu_3001_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln33_17_fu_3005_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_18_fu_3011_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_19_fu_3015_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln33_1_fu_3046_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln33_20_fu_3019_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_21_fu_3089_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_22_fu_3025_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln33_23_fu_3029_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln33_24_fu_3080_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_25_fu_3033_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_26_fu_2965_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln33_27_fu_3037_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_28_fu_3084_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_29_fu_3093_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_2_fu_3050_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_30_fu_3102_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_31_fu_2661_p2">+, 0, 0, 14, 7, 6</column>
+<column name="add_ln33_32_fu_2672_p2">+, 0, 0, 15, 8, 7</column>
+<column name="add_ln33_33_fu_2683_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln33_34_fu_2694_p2">+, 0, 0, 14, 9, 8</column>
+<column name="add_ln33_35_fu_2705_p2">+, 0, 0, 14, 9, 9</column>
+<column name="add_ln33_36_fu_2724_p2">+, 0, 0, 14, 9, 9</column>
+<column name="add_ln33_37_fu_2744_p2">+, 0, 0, 13, 10, 9</column>
+<column name="add_ln33_38_fu_2755_p2">+, 0, 0, 13, 10, 10</column>
+<column name="add_ln33_39_fu_2766_p2">+, 0, 0, 13, 10, 10</column>
+<column name="add_ln33_3_fu_2969_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_40_fu_2777_p2">+, 0, 0, 13, 10, 10</column>
+<column name="add_ln33_41_fu_2788_p2">+, 0, 0, 13, 10, 10</column>
+<column name="add_ln33_4_fu_2973_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln33_5_fu_2977_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_6_fu_3056_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_7_fu_3061_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln33_8_fu_3065_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln33_9_fu_3069_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln33_fu_3042_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln36_fu_2826_p2">+, 0, 0, 13, 10, 10</column>
+<column name="add_ln40_1_fu_3111_p2">+, 0, 0, 12, 11, 1</column>
+<column name="add_ln40_fu_3123_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln41_fu_3173_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln42_fu_3167_p2">+, 0, 0, 13, 10, 10</column>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp1_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state21_io">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state22_io">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2_pp0_stage0_iter0">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state5_pp1_stage0_iter0">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln12_fu_976_p2">icmp, 0, 0, 12, 11, 12</column>
+<column name="icmp_ln13_fu_988_p2">icmp, 0, 0, 10, 6, 7</column>
+<column name="icmp_ln17_fu_1048_p2">icmp, 0, 0, 12, 11, 12</column>
+<column name="icmp_ln18_fu_1060_p2">icmp, 0, 0, 10, 6, 7</column>
+<column name="icmp_ln24_fu_1132_p2">icmp, 0, 0, 12, 11, 12</column>
+<column name="icmp_ln26_fu_1144_p2">icmp, 0, 0, 10, 6, 7</column>
+<column name="icmp_ln40_fu_3117_p2">icmp, 0, 0, 12, 11, 12</column>
+<column name="icmp_ln41_fu_3129_p2">icmp, 0, 0, 10, 6, 7</column>
+<column name="ap_block_pp3_stage0_01001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp3_stage0_11001">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln24_10_fu_2342_p2">or, 0, 0, 10, 10, 4</column>
+<column name="or_ln24_11_fu_1410_p2">or, 0, 0, 10, 10, 4</column>
+<column name="or_ln24_12_fu_1453_p2">or, 0, 0, 10, 10, 4</column>
+<column name="or_ln24_13_fu_1496_p2">or, 0, 0, 10, 10, 4</column>
+<column name="or_ln24_14_fu_1539_p2">or, 0, 0, 10, 10, 4</column>
+<column name="or_ln24_15_fu_1582_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_16_fu_1625_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_17_fu_1668_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_18_fu_1711_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_19_fu_2379_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_1_fu_2157_p2">or, 0, 0, 10, 10, 2</column>
+<column name="or_ln24_20_fu_2416_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_21_fu_2453_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_22_fu_2490_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_23_fu_2527_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_24_fu_2564_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_25_fu_2601_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_26_fu_2638_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_27_fu_1786_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_28_fu_1829_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_29_fu_1872_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_2_fu_2194_p2">or, 0, 0, 10, 10, 2</column>
+<column name="or_ln24_30_fu_1915_p2">or, 0, 0, 10, 10, 5</column>
+<column name="or_ln24_3_fu_1222_p2">or, 0, 0, 10, 10, 3</column>
+<column name="or_ln24_4_fu_1265_p2">or, 0, 0, 10, 10, 3</column>
+<column name="or_ln24_5_fu_1308_p2">or, 0, 0, 10, 10, 3</column>
+<column name="or_ln24_6_fu_1351_p2">or, 0, 0, 10, 10, 3</column>
+<column name="or_ln24_7_fu_2231_p2">or, 0, 0, 10, 10, 4</column>
+<column name="or_ln24_8_fu_2268_p2">or, 0, 0, 10, 10, 4</column>
+<column name="or_ln24_9_fu_2305_p2">or, 0, 0, 10, 10, 4</column>
+<column name="or_ln24_fu_2120_p2">or, 0, 0, 10, 10, 1</column>
+<column name="select_ln12_1_fu_1002_p3">select, 0, 0, 6, 1, 6</column>
+<column name="select_ln12_fu_994_p3">select, 0, 0, 6, 1, 1</column>
+<column name="select_ln17_1_fu_1074_p3">select, 0, 0, 6, 1, 6</column>
+<column name="select_ln17_fu_1066_p3">select, 0, 0, 6, 1, 1</column>
+<column name="select_ln24_1_fu_2072_p3">select, 0, 0, 6, 1, 6</column>
+<column name="select_ln24_2_fu_1170_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_34_fu_2113_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_35_fu_2150_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_36_fu_2187_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_37_fu_1214_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_38_fu_1257_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_39_fu_1300_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_40_fu_1343_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_41_fu_2224_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_42_fu_2261_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_43_fu_2298_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_44_fu_2335_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_45_fu_1402_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_46_fu_1445_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_47_fu_1488_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_48_fu_1531_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_49_fu_1574_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_50_fu_1617_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_51_fu_1660_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_52_fu_1703_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_53_fu_2372_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_54_fu_2409_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_55_fu_2446_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_56_fu_2483_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_57_fu_2520_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_58_fu_2557_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_59_fu_2594_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_60_fu_2631_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_61_fu_1778_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_62_fu_1821_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_63_fu_1864_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_64_fu_1907_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln24_fu_1150_p3">select, 0, 0, 6, 1, 1</column>
+<column name="select_ln40_1_fu_3143_p3">select, 0, 0, 6, 1, 6</column>
+<column name="select_ln40_fu_3135_p3">select, 0, 0, 6, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_pp2">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_pp3">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="ap_enable_reg_pp1_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="ap_enable_reg_pp3_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="xor_ln33_fu_2057_p2">xor, 0, 0, 7, 6, 7</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="a_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">59, 11, 1, 11</column>
+<column name="ap_enable_reg_pp0_iter1">14, 3, 1, 3</column>
+<column name="ap_enable_reg_pp1_iter1">14, 3, 1, 3</column>
+<column name="ap_enable_reg_pp2_iter4">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp3_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp3_iter3">9, 2, 1, 2</column>
+<column name="ap_phi_mux_i_phi_fu_918_p4">9, 2, 6, 12</column>
+<column name="ap_phi_mux_ia_phi_fu_852_p4">9, 2, 6, 12</column>
+<column name="ap_phi_mux_iab_phi_fu_952_p4">9, 2, 6, 12</column>
+<column name="ap_phi_mux_ib_phi_fu_885_p4">9, 2, 6, 12</column>
+<column name="ap_phi_mux_indvar_flatten47_phi_fu_907_p4">9, 2, 11, 22</column>
+<column name="ap_phi_mux_j_phi_fu_930_p4">9, 2, 6, 12</column>
+<column name="b_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="i_reg_914">9, 2, 6, 12</column>
+<column name="ia_reg_848">9, 2, 6, 12</column>
+<column name="iab_reg_948">9, 2, 6, 12</column>
+<column name="ib_reg_881">9, 2, 6, 12</column>
+<column name="indvar_flatten47_reg_903">9, 2, 11, 22</column>
+<column name="indvar_flatten55_reg_937">9, 2, 11, 22</column>
+<column name="indvar_flatten7_reg_870">9, 2, 11, 22</column>
+<column name="indvar_flatten_reg_837">9, 2, 11, 22</column>
+<column name="j_reg_926">9, 2, 6, 12</column>
+<column name="ja_reg_859">9, 2, 6, 12</column>
+<column name="jab_reg_959">9, 2, 6, 12</column>
+<column name="jb_reg_892">9, 2, 6, 12</column>
+<column name="res_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="tempAB_address0">14, 3, 10, 30</column>
+<column name="tempA_address0">20, 4, 10, 40</column>
+<column name="tempA_address1">14, 3, 10, 30</column>
+<column name="tempA_address10">14, 3, 10, 30</column>
+<column name="tempA_address11">14, 3, 10, 30</column>
+<column name="tempA_address12">14, 3, 10, 30</column>
+<column name="tempA_address13">14, 3, 10, 30</column>
+<column name="tempA_address14">14, 3, 10, 30</column>
+<column name="tempA_address15">14, 3, 10, 30</column>
+<column name="tempA_address2">14, 3, 10, 30</column>
+<column name="tempA_address3">14, 3, 10, 30</column>
+<column name="tempA_address4">14, 3, 10, 30</column>
+<column name="tempA_address5">14, 3, 10, 30</column>
+<column name="tempA_address6">14, 3, 10, 30</column>
+<column name="tempA_address7">14, 3, 10, 30</column>
+<column name="tempA_address8">14, 3, 10, 30</column>
+<column name="tempA_address9">14, 3, 10, 30</column>
+<column name="tempB_address0">20, 4, 10, 40</column>
+<column name="tempB_address1">14, 3, 10, 30</column>
+<column name="tempB_address10">14, 3, 10, 30</column>
+<column name="tempB_address11">14, 3, 10, 30</column>
+<column name="tempB_address12">14, 3, 10, 30</column>
+<column name="tempB_address13">14, 3, 10, 30</column>
+<column name="tempB_address14">14, 3, 10, 30</column>
+<column name="tempB_address15">14, 3, 10, 30</column>
+<column name="tempB_address2">14, 3, 10, 30</column>
+<column name="tempB_address3">14, 3, 10, 30</column>
+<column name="tempB_address4">14, 3, 10, 30</column>
+<column name="tempB_address5">14, 3, 10, 30</column>
+<column name="tempB_address6">14, 3, 10, 30</column>
+<column name="tempB_address7">14, 3, 10, 30</column>
+<column name="tempB_address8">14, 3, 10, 30</column>
+<column name="tempB_address9">14, 3, 10, 30</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="a_read_reg_3202">32, 0, 32, 0</column>
+<column name="add_ln14_reg_3197">10, 0, 10, 0</column>
+<column name="add_ln19_reg_3226">10, 0, 10, 0</column>
+<column name="add_ln24_1_reg_3241">11, 0, 11, 0</column>
+<column name="add_ln24_reg_3250">6, 0, 6, 0</column>
+<column name="add_ln26_reg_3855">6, 0, 6, 0</column>
+<column name="add_ln33_12_reg_4190">32, 0, 32, 0</column>
+<column name="add_ln33_13_reg_4225">32, 0, 32, 0</column>
+<column name="add_ln33_17_reg_4195">32, 0, 32, 0</column>
+<column name="add_ln33_20_reg_4200">32, 0, 32, 0</column>
+<column name="add_ln33_22_reg_4205">32, 0, 32, 0</column>
+<column name="add_ln33_23_reg_4210">32, 0, 32, 0</column>
+<column name="add_ln33_26_reg_4145">32, 0, 32, 0</column>
+<column name="add_ln33_27_reg_4215">32, 0, 32, 0</column>
+<column name="add_ln33_28_reg_4230">32, 0, 32, 0</column>
+<column name="add_ln33_29_reg_4235">32, 0, 32, 0</column>
+<column name="add_ln33_30_reg_4240">32, 0, 32, 0</column>
+<column name="add_ln33_5_reg_4185">32, 0, 32, 0</column>
+<column name="add_ln33_6_reg_4220">32, 0, 32, 0</column>
+<column name="add_ln36_reg_3770">10, 0, 10, 0</column>
+<column name="add_ln42_reg_4259">10, 0, 10, 0</column>
+<column name="ap_CS_fsm">10, 0, 10, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp2_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp2_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp2_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp2_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp2_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp3_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp3_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp3_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp3_iter3">1, 0, 1, 0</column>
+<column name="b_read_reg_3231">32, 0, 32, 0</column>
+<column name="i_reg_914">6, 0, 6, 0</column>
+<column name="ia_reg_848">6, 0, 6, 0</column>
+<column name="iab_reg_948">6, 0, 6, 0</column>
+<column name="ib_reg_881">6, 0, 6, 0</column>
+<column name="icmp_ln12_reg_3188">1, 0, 1, 0</column>
+<column name="icmp_ln17_reg_3217">1, 0, 1, 0</column>
+<column name="icmp_ln24_reg_3246">1, 0, 1, 0</column>
+<column name="icmp_ln26_reg_3255">1, 0, 1, 0</column>
+<column name="icmp_ln40_reg_4250">1, 0, 1, 0</column>
+<column name="indvar_flatten47_reg_903">11, 0, 11, 0</column>
+<column name="indvar_flatten55_reg_937">11, 0, 11, 0</column>
+<column name="indvar_flatten7_reg_870">11, 0, 11, 0</column>
+<column name="indvar_flatten_reg_837">11, 0, 11, 0</column>
+<column name="j_reg_926">6, 0, 6, 0</column>
+<column name="ja_reg_859">6, 0, 6, 0</column>
+<column name="jab_reg_959">6, 0, 6, 0</column>
+<column name="jb_reg_892">6, 0, 6, 0</column>
+<column name="mul_ln33_10_reg_4175">32, 0, 32, 0</column>
+<column name="mul_ln33_11_reg_4180">32, 0, 32, 0</column>
+<column name="mul_ln33_12_reg_4030">32, 0, 32, 0</column>
+<column name="mul_ln33_13_reg_4080">32, 0, 32, 0</column>
+<column name="mul_ln33_14_reg_4035">32, 0, 32, 0</column>
+<column name="mul_ln33_15_reg_4085">32, 0, 32, 0</column>
+<column name="mul_ln33_16_reg_4040">32, 0, 32, 0</column>
+<column name="mul_ln33_17_reg_4090">32, 0, 32, 0</column>
+<column name="mul_ln33_18_reg_4045">32, 0, 32, 0</column>
+<column name="mul_ln33_19_reg_4095">32, 0, 32, 0</column>
+<column name="mul_ln33_1_reg_4150">32, 0, 32, 0</column>
+<column name="mul_ln33_20_reg_4100">32, 0, 32, 0</column>
+<column name="mul_ln33_21_reg_4105">32, 0, 32, 0</column>
+<column name="mul_ln33_22_reg_4110">32, 0, 32, 0</column>
+<column name="mul_ln33_23_reg_4115">32, 0, 32, 0</column>
+<column name="mul_ln33_24_reg_4120">32, 0, 32, 0</column>
+<column name="mul_ln33_25_reg_4125">32, 0, 32, 0</column>
+<column name="mul_ln33_26_reg_4130">32, 0, 32, 0</column>
+<column name="mul_ln33_27_reg_4135">32, 0, 32, 0</column>
+<column name="mul_ln33_28_reg_4050">32, 0, 32, 0</column>
+<column name="mul_ln33_29_reg_4140">32, 0, 32, 0</column>
+<column name="mul_ln33_2_reg_4155">32, 0, 32, 0</column>
+<column name="mul_ln33_30_reg_4055">32, 0, 32, 0</column>
+<column name="mul_ln33_31_reg_4060">32, 0, 32, 0</column>
+<column name="mul_ln33_3_reg_4160">32, 0, 32, 0</column>
+<column name="mul_ln33_4_reg_4020">32, 0, 32, 0</column>
+<column name="mul_ln33_5_reg_4070">32, 0, 32, 0</column>
+<column name="mul_ln33_6_reg_4025">32, 0, 32, 0</column>
+<column name="mul_ln33_7_reg_4075">32, 0, 32, 0</column>
+<column name="mul_ln33_8_reg_4165">32, 0, 32, 0</column>
+<column name="mul_ln33_9_reg_4170">32, 0, 32, 0</column>
+<column name="mul_ln33_reg_4065">32, 0, 32, 0</column>
+<column name="select_ln12_1_reg_3192">6, 0, 6, 0</column>
+<column name="select_ln17_1_reg_3221">6, 0, 6, 0</column>
+<column name="select_ln24_1_reg_3525">6, 0, 6, 0</column>
+<column name="select_ln24_2_reg_3285">5, 0, 10, 5</column>
+<column name="select_ln24_reg_3275">6, 0, 6, 0</column>
+<column name="select_ln40_1_reg_4254">6, 0, 6, 0</column>
+<column name="tempA_load_10_reg_3890">32, 0, 32, 0</column>
+<column name="tempA_load_11_reg_3895">32, 0, 32, 0</column>
+<column name="tempA_load_12_reg_3590">32, 0, 32, 0</column>
+<column name="tempA_load_13_reg_3595">32, 0, 32, 0</column>
+<column name="tempA_load_14_reg_3600">32, 0, 32, 0</column>
+<column name="tempA_load_15_reg_3605">32, 0, 32, 0</column>
+<column name="tempA_load_16_reg_3610">32, 0, 32, 0</column>
+<column name="tempA_load_17_reg_3615">32, 0, 32, 0</column>
+<column name="tempA_load_18_reg_3620">32, 0, 32, 0</column>
+<column name="tempA_load_19_reg_3625">32, 0, 32, 0</column>
+<column name="tempA_load_1_reg_3865">32, 0, 32, 0</column>
+<column name="tempA_load_20_reg_3900">32, 0, 32, 0</column>
+<column name="tempA_load_21_reg_3905">32, 0, 32, 0</column>
+<column name="tempA_load_22_reg_3910">32, 0, 32, 0</column>
+<column name="tempA_load_23_reg_3915">32, 0, 32, 0</column>
+<column name="tempA_load_24_reg_3920">32, 0, 32, 0</column>
+<column name="tempA_load_25_reg_3925">32, 0, 32, 0</column>
+<column name="tempA_load_26_reg_3930">32, 0, 32, 0</column>
+<column name="tempA_load_27_reg_3935">32, 0, 32, 0</column>
+<column name="tempA_load_28_reg_3670">32, 0, 32, 0</column>
+<column name="tempA_load_29_reg_3675">32, 0, 32, 0</column>
+<column name="tempA_load_2_reg_3870">32, 0, 32, 0</column>
+<column name="tempA_load_30_reg_3680">32, 0, 32, 0</column>
+<column name="tempA_load_31_reg_3685">32, 0, 32, 0</column>
+<column name="tempA_load_3_reg_3875">32, 0, 32, 0</column>
+<column name="tempA_load_4_reg_3550">32, 0, 32, 0</column>
+<column name="tempA_load_5_reg_3555">32, 0, 32, 0</column>
+<column name="tempA_load_6_reg_3560">32, 0, 32, 0</column>
+<column name="tempA_load_7_reg_3565">32, 0, 32, 0</column>
+<column name="tempA_load_8_reg_3880">32, 0, 32, 0</column>
+<column name="tempA_load_9_reg_3885">32, 0, 32, 0</column>
+<column name="tempA_load_reg_3860">32, 0, 32, 0</column>
+<column name="tempB_load_10_reg_3965">32, 0, 32, 0</column>
+<column name="tempB_load_11_reg_3970">32, 0, 32, 0</column>
+<column name="tempB_load_12_reg_3800">32, 0, 32, 0</column>
+<column name="tempB_load_13_reg_3975">32, 0, 32, 0</column>
+<column name="tempB_load_14_reg_3805">32, 0, 32, 0</column>
+<column name="tempB_load_15_reg_3980">32, 0, 32, 0</column>
+<column name="tempB_load_16_reg_3810">32, 0, 32, 0</column>
+<column name="tempB_load_17_reg_3985">32, 0, 32, 0</column>
+<column name="tempB_load_18_reg_3815">32, 0, 32, 0</column>
+<column name="tempB_load_19_reg_3990">32, 0, 32, 0</column>
+<column name="tempB_load_1_reg_3940">32, 0, 32, 0</column>
+<column name="tempB_load_20_reg_3820">32, 0, 32, 0</column>
+<column name="tempB_load_21_reg_3995">32, 0, 32, 0</column>
+<column name="tempB_load_22_reg_3825">32, 0, 32, 0</column>
+<column name="tempB_load_23_reg_4000">32, 0, 32, 0</column>
+<column name="tempB_load_24_reg_3830">32, 0, 32, 0</column>
+<column name="tempB_load_25_reg_4005">32, 0, 32, 0</column>
+<column name="tempB_load_26_reg_3835">32, 0, 32, 0</column>
+<column name="tempB_load_27_reg_4010">32, 0, 32, 0</column>
+<column name="tempB_load_28_reg_3840">32, 0, 32, 0</column>
+<column name="tempB_load_29_reg_4015">32, 0, 32, 0</column>
+<column name="tempB_load_2_reg_3780">32, 0, 32, 0</column>
+<column name="tempB_load_2_reg_3780_pp2_iter1_reg">32, 0, 32, 0</column>
+<column name="tempB_load_30_reg_3845">32, 0, 32, 0</column>
+<column name="tempB_load_31_reg_3850">32, 0, 32, 0</column>
+<column name="tempB_load_3_reg_3945">32, 0, 32, 0</column>
+<column name="tempB_load_4_reg_3785">32, 0, 32, 0</column>
+<column name="tempB_load_5_reg_3950">32, 0, 32, 0</column>
+<column name="tempB_load_6_reg_3790">32, 0, 32, 0</column>
+<column name="tempB_load_7_reg_3955">32, 0, 32, 0</column>
+<column name="tempB_load_8_reg_3795">32, 0, 32, 0</column>
+<column name="tempB_load_8_reg_3795_pp2_iter1_reg">32, 0, 32, 0</column>
+<column name="tempB_load_9_reg_3960">32, 0, 32, 0</column>
+<column name="tempB_load_reg_3775">32, 0, 32, 0</column>
+<column name="trunc_ln24_14_reg_3325">5, 0, 5, 0</column>
+<column name="trunc_ln24_16_reg_3330">5, 0, 5, 0</column>
+<column name="trunc_ln24_18_reg_3335">5, 0, 5, 0</column>
+<column name="trunc_ln24_20_reg_3340">5, 0, 5, 0</column>
+<column name="trunc_ln24_2_reg_3295">5, 0, 5, 0</column>
+<column name="trunc_ln24_38_reg_3385">5, 0, 5, 0</column>
+<column name="trunc_ln24_40_reg_3390">5, 0, 5, 0</column>
+<column name="trunc_ln24_42_reg_3395">5, 0, 5, 0</column>
+<column name="trunc_ln24_44_reg_3400">5, 0, 5, 0</column>
+<column name="trunc_ln24_46_reg_3405">5, 0, 5, 0</column>
+<column name="trunc_ln24_48_reg_3410">5, 0, 5, 0</column>
+<column name="trunc_ln24_4_reg_3300">5, 0, 5, 0</column>
+<column name="trunc_ln24_50_reg_3415">5, 0, 5, 0</column>
+<column name="trunc_ln24_52_reg_3420">5, 0, 5, 0</column>
+<column name="trunc_ln24_reg_3290">5, 0, 5, 0</column>
+<column name="add_ln36_reg_3770">64, 32, 10, 0</column>
+<column name="icmp_ln24_reg_3246">64, 32, 1, 0</column>
+<column name="icmp_ln40_reg_4250">64, 32, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_none, matrixmul, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_none, matrixmul, return value</column>
+<column name="a_TDATA">in, 32, axis, a, pointer</column>
+<column name="a_TVALID">in, 1, axis, a, pointer</column>
+<column name="a_TREADY">out, 1, axis, a, pointer</column>
+<column name="b_TDATA">in, 32, axis, b, pointer</column>
+<column name="b_TVALID">in, 1, axis, b, pointer</column>
+<column name="b_TREADY">out, 1, axis, b, pointer</column>
+<column name="res_TDATA">out, 32, axis, res, pointer</column>
+<column name="res_TVALID">out, 1, axis, res, pointer</column>
+<column name="res_TREADY">in, 1, axis, res, pointer</column>
+</table>
+</item>
+</section>
+</profile>

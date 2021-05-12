@@ -1,0 +1,112 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register matrixmul a 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register matrixmul b 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register matrixmul res 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode ap_ctrl_none matrixmul 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 1 matrixmul/col 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 191.425 MB.
+INFO: [HLS 200-10] Analyzing design file 'mul.cpp' ... 
+WARNING: [HLS 214-140] Array stream parameter 'a' in function 'matrixmul' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: mul.cpp:4
+WARNING: [HLS 214-140] Array stream parameter 'b' in function 'matrixmul' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: mul.cpp:5
+WARNING: [HLS 214-140] Array stream parameter 'res' in function 'matrixmul' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: mul.cpp:6
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.587 seconds; current allocated memory: 192.854 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'a' (mul.cpp:7:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'b' (mul.cpp:7:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'res' (mul.cpp:7:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.184 seconds; current allocated memory: 194.168 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 194.169 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.316 seconds; current allocated memory: 195.417 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.235 seconds; current allocated memory: 194.656 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_13_2' (mul.cpp:13) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_18_4' (mul.cpp:18) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_41_6' (mul.cpp:41) in function 'matrixmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (mul.cpp:30) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'product' (mul.cpp:30) in function 'matrixmul' completely with a factor of 32.
+INFO: [XFORM 203-11] Balancing expressions in function 'matrixmul' (mul.cpp:4)...31 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.462 seconds; current allocated memory: 215.505 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_12_1' (mul.cpp:12:29) in function 'matrixmul'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_17_3' (mul.cpp:17:29) in function 'matrixmul'.
+INFO: [XFORM 203-541] Flattening a loop nest 'row' (mul.cpp:24:16) in function 'matrixmul'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_40_5' (mul.cpp:40:30) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'tempA' (mul.cpp:14:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'tempB' (mul.cpp:19:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'tempAB' (mul.cpp:36:21)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.993 seconds; current allocated memory: 210.987 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'tempB'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'tempA'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_12_1_VITIS_LOOP_13_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_12_1_VITIS_LOOP_13_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_17_3_VITIS_LOOP_18_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_17_3_VITIS_LOOP_18_4'
+INFO: [SCHED 204-61] Pipelining loop 'row_col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('tempA_load_21', mul.cpp:24) on array 'tempA', mul.cpp:8 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'tempA'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 10, loop 'row_col'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_5_VITIS_LOOP_41_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_40_5_VITIS_LOOP_41_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.807 seconds; current allocated memory: 212.661 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.629 seconds; current allocated memory: 214.476 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/a' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/b' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/res' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.965 seconds; current allocated memory: 218.393 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'matrixmul_mul_32s_32s_32_2_1_Multiplier_0'
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_tempA_ram (RAM_1WnR)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_tempAB_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 5.045 seconds; current allocated memory: 232.109 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.45 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 8 seconds. CPU system time: 2 seconds. Elapsed time: 16.674 seconds; current allocated memory: 232.210 MB.
+INFO: [HLS 200-112] Total CPU user time: 13 seconds. Total CPU system time: 3 seconds. Total elapsed time: 20.003 seconds; peak allocated memory: 232.109 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register matrixmul a 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register matrixmul b 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register matrixmul res 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode ap_ctrl_none matrixmul 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 1 matrixmul/col 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/guill/Documents/Overlay/Matmul/matrixmul.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file matrixmul.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 11.21 seconds; current allocated memory: 198.793 MB.

@@ -1,0 +1,6 @@
+time_img_fdiv_32ns_32ns_32_16_no_dsp_1
+time_img_sitofp_32ns_32_6_no_dsp_1
+time_img_regslice_both
+time_img_regslice_both
+time_img_regslice_both
+time_img

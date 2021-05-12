@@ -1,0 +1,34 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'guill' on host 'msi' (Windows NT_amd64 version 6.2) on Tue May 11 21:28:42 +0200 2021
+INFO: [HLS 200-10] In directory 'C:/Users/guill/Documents/Overlay/aapv'
+Sourcing Tcl script 'C:/Users/guill/Documents/Overlay/aapv/aapv/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project aapv 
+INFO: [HLS 200-10] Opening project 'C:/Users/guill/Documents/Overlay/aapv/aapv'.
+INFO: [HLS 200-1510] Running: set_top time_img 
+INFO: [HLS 200-1510] Running: add_files aapv.h 
+INFO: [HLS 200-10] Adding design file 'aapv.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb aapv_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'aapv_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/guill/Documents/Overlay/aapv/aapv/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/guill/Documents/Overlay/aapv/time_img.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/guill/Documents/Overlay/aapv/time_img.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register time_img res 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register time_img avg 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register time_img cnt 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode ap_ctrl_none time_img 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.311 seconds; current allocated memory: 191.632 MB.
